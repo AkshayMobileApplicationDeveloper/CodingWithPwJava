@@ -1,5 +1,7 @@
 package DoublyLinkedList;
 
+
+import static DoublyLinkedList.InsertAtAnyNodeInAnyIndex.insertAtAnyPosition;
 import static DoublyLinkedList.InsertAtHead.insertAtHead;
 import static DoublyLinkedList.InsertAtTail.insertAtTail;
 import static DoublyLinkedList.Node.displayHead;
@@ -33,5 +35,11 @@ public class Main {
         System.out.println("InsertAtTail");
         insertAtTail(newHead,90);
         displayHead(newHead);
+
+        System.out.println("Insert At Any Node In Any Index");
+        insertAtAnyPosition(newHead,3,50);
+        displayHead(newHead);
+
+
     }
 }
